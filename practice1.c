@@ -59,7 +59,7 @@ int main(int argx, char *argy[]){
     
     seed = time(NULL);
     pthread_t threads[THREADS];
-    pointsThread= npoints/THREADS;
+    pointsThread= npuntos/THREADS;
 
 
     for(int i=0; i < THREADS; i++){
@@ -69,7 +69,7 @@ int main(int argx, char *argy[]){
         pthread_join(threads[i], NULL);
     }
 
-    double PI = 4.0*(double)circle_count/(double)npuntosts;
+    double PI = 4.0*(double)circle_count/(double)npuntos;
     end = clock();
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
     printf("PI = %f\nTime used=%f",PI, cpu_time_used);
