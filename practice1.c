@@ -8,6 +8,7 @@ https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/0
 https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/simple-thread.c
 https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/mutex-thread.c
 https://programacion1z.wordpress.com/2019/11/08/9524/
+https://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/
 Todo para tener mejores ejemplos y la solucion de errores encontrados en la implementacion del codigo
 */
 #include <pthread.h>
