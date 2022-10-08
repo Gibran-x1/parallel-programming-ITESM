@@ -1,3 +1,15 @@
+/*
+Codigo de metodo montecarlo para encontrar pi con threads
+
+Este codigo se basa en los siguientes codigos que estuvimos viendo en clases:
+https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/Makefile
+https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/findCircle.c
+https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/practice1.c
+https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/simple-thread.c
+https://github.com/VictorRodriguez/parallel-programming-lecture/blob/main/labs/04/mutex-thread.c
+https://programacion1z.wordpress.com/2019/11/08/9524/
+Todo para tener mejores ejemplos y la solucion de errores encontrados en la implementacion del codigo
+*/
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -72,6 +84,6 @@ int main(int argx, char *argy[]){
     double PI = 4.0*(double)circle_count/(double)npuntos;
     end = clock();
     cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("PI = %f\nTime used=%f",PI, cpu_time_used);
+    printf("PI = %f\n Time used=%f\n",PI, cpu_time_used);
     pthread_mutex_destroy(&lock);
 }
